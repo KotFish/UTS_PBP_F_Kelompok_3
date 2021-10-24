@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="det"
+            type="com.example.uts_pbp_f_kelompok_3.model.Destinasi" />
+    </data>
+
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".JourneyDetailActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+            <TextView
+                android:id="@+id/textTitle"
+                style="@style/TextAppearance.MaterialComponents.Headline4"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@{det.nama_wisata}"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="16dp"
+            app:url_gambar="@{det.url_gambar}" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+            <TextView
+                android:id="@+id/deskripsiText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{det.deskripsi}"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Lokasi"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+            <TextView
+                android:id="@+id/lokasiText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{det.lokasi}"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Harga"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+            <TextView
+                android:id="@+id/hargaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{det.harga}"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/jmlhTiket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Jumlah Pembelian"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Jumlah Pembelian Tiket">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiHarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy"
+            app:cornerRadius="15dp" />
+    </LinearLayout>
+</ScrollView>
+</layout>

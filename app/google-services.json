@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1029330334010",
+    "project_id": "uts-pbp-f-kelompok-3",
+    "storage_bucket": "uts-pbp-f-kelompok-3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029330334010:android:782f20c164a4deaa4e2003",
+        "android_client_info": {
+          "package_name": "com.example.uts_pbp_f_kelompok_3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029330334010-h20e5442a2cgmh43pua728ch5v9p6lrq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGm7TArUqHl2Oph3jMTmzbNOR3UtWZUrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029330334010-h20e5442a2cgmh43pua728ch5v9p6lrq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
