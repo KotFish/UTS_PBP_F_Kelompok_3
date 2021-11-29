@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
     private CardView cvTravel, cvLocation;
     private ImageButton btnAbout;
     private NotificationManagerCompat notificationManagerCompat;
-    //attribut
-    //halo tes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
