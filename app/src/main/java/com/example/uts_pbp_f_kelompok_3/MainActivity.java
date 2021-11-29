@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btnAbout;
     private NotificationManagerCompat notificationManagerCompat;
     //attribut
+    //halo tes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
