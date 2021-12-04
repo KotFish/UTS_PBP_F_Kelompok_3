@@ -15,7 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etUsername, etPassword;
     private MaterialButton btnClear, btnLogin;
     private UserPreferences userPreferences;
-
+//tes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
